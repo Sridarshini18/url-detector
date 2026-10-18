@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Detector | Cyber Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛡️ URL Detector</h1>
+        <p>Detect suspicious URLs and stay safe online.</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h2>Phishing URL Detection</h2>
+            <p>Enter a website URL to check for suspicious signs.</p>
+
+            <form id="urlForm">
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="https://example.com"
+                    required
+                >
+                <button type="submit">Scan URL</button>
+            </form>
+
+            <div id="loading" class="hidden">Scanning URL...</div>
+
+            <div id="result" class="result hidden" aria-live="polite"></div>
+
+            <button id="clearBtn" class="clear-btn" type="button">
+                Clear
+            </button>
+        </div>
+
+        <div class="info">
+            <h3>🔍 What does this tool check?</h3>
+            <ul>
+                <li>HTTPS security protocol</li>
+                <li>Suspicious symbols and URL patterns</li>
+                <li>IP addresses used instead of domain names</li>
+                <li>Unusual URL length</li>
+                <li>Common phishing-related keywords</li>
+            </ul>
+            <p class="notice">
+                Note: This is a basic educational detector. It does not
+                access a live phishing database, so it cannot confirm
+                whether a website is safe or malicious.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>URL Detector Project | Cyber Security</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
